@@ -284,7 +284,8 @@ body {
 
 /* About Page */
 .about-hero, .contact-hero {
-    min-height: calc(100vh - 70px);
+    /* min-height: calc(100vh - 70px); */
+    height: 100vh;
     background: linear-gradient(rgba(0,128,128,0.6), rgba(0,128,128,0.6)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1280px-Above_Gotham.jpg');
     background-size: cover;
     background-position: center;
