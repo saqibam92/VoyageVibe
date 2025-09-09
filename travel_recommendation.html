@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageVibe - Explore Dream Destinations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="">
+                <svg class="logo-icon" viewBox="0 0 24 24">
+                    <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                </svg>
+                <strong>VoyageVibe</strong> 
+            </a>
+
+        </div>
+        
+        <div class="nav-links">
+            <a href="#" id="navHome">Home</a>
+            <a href="#" id="navAbout">About Us</a>
+            <a href="#" id="navContact">Contact Us</a>
+        </div>
+        
+        <div class="search-container" id="searchContainer">
+            <input type="text" class="search-input" id="searchInput" placeholder="Enter a destination or keyword">
+            <button class="search-btn" id="searchBtn">Search</button>
+            <button class="clear-btn" id="clearBtn">Clear</button>
+        </div>
+    </nav>
+
+    <section id="resultsSection">
+        <div class="results-grid" id="resultsGrid"></div>
+        <div class="error-message" id="errorMessage"></div>
+    </section>
+
+    <div class="page active" id="home">
+        <section class="hero">
+            <div class="social-links">
+                <a href="#" title="Twitter">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="#" title="Facebook">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" title="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" title="YouTube">
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+                    <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                    <button class="book-btn">BOOK NOW</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="page" id="about">
+        <section class="about-hero">
+            <div class="about-content">
+                <h1>ABOUT US</h1>
+                <div class="company-info">
+                    <h2>Welcome to Our Company!</h2>
+                    <p>We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <strong>provide the best experience</strong> for people traveling to different destinations around the world.</p>
+                    <p>Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <strong>putting our customers first</strong> and working together to achieve our goals.</p>
+                    <p>Feel free to explore our website to learn more about what we offer!</p>
+                </div>
+                <div class="team-section">
+                    <h2>Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <h3>🔹 John Doe</h3>
+                            <p>John is responsible for...</p>
+                            <div class="team-role">CEO</div>
+                        </div>
+                        <div class="team-member">
+                            <h3>🔹 Celina Thomas</h3>
+                            <p>Celina Thomas is responsible for...</p>
+                            <div class="team-role">Team Lead</div>
+                        </div>
+                        <div class="team-member">
+                            <h3>🔹 Mike Tysen</h3>
+                            <p>Mike Tysen is responsible for...</p>
+                            <div class="team-role">Delivery Head</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="page" id="contact">
+        <section class="contact-hero">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h1>CONTACT US</h1>
+                    <p>Get in touch</p>
+                </div>                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
